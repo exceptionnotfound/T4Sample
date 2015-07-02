@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "T4MVC Sample";
+}
+
+<h2>T4MVC Sample</h2>
+
+<ul>
+    <li>@Html.ActionLink("View Details for Matthew Jones (Standard)", "Details", "User", new { id = 4, name = "Matthew Jones" }, null)</li>
+    <li>@Html.ActionLink("View Details for Matthew Jones (T4MVC)", MVC.User.Details(4, "Matthew Jones"))</li>
+    <li>@Html.ActionLink("View Details for John Smith (Standard)", "Details", "User", new { id = 2, name = "John Smith" }, null)</li>
+    <li>@Html.ActionLink("View Details for John Smith (T4MVC)", MVC.User.Details(2, "John Smith"))</li>
+    <li>@Html.ActionLink("View Details for Jane Doe (Standard)", "Details", "User", new { id = 9, name = "Jane Doe" }, null)</li>
+    <li>@Html.ActionLink("View Details for Jane Doe (T4MVC)", MVC.User.Details(9, "Jane Doe"))</li>
+</ul>
